@@ -18,6 +18,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - cmake
+    - make  # [unix]
 
 test:
   commands:
