@@ -8,6 +8,9 @@ source:
   fn: libgpuarray-{{ version }}.tar.gz
   url: https://github.com/Theano/libgpuarray/releases/download/v{{ version }}/libgpuarray-{{ version }}.tar.gz
   sha256: 887b6433a30282cb002117da89b05812c770fd9469f93950ff3866ddd02bfc64
+  patches:  # [osx and arm64]
+    # Changes CMAKE_OSX_ARCHITECTURES from x86_64 to arm64
+    - cmake-osx-arch-arm64.patch  # [osx and arm64]
 
 build:
   number: 1
