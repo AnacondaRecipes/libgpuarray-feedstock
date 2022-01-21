@@ -1,0 +1,12 @@
+diff -urN a/CMakeLists.txt b/CMakeLists.txt
+--- a/CMakeLists.txt	2018-04-23 23:05:42.000000000 +0300
++++ b/CMakeLists.txt	2022-01-21 17:13:39.380085910 +0300
+@@ -17,7 +17,7 @@
+ execute_process(COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_SOURCE_DIR}/lib)
+ set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
+ 
+-set(CMAKE_OSX_ARCHITECTURES x86_64)
++set(CMAKE_OSX_ARCHITECTURES arm64)
+ set(CMAKE_C_VISIBILITY_PRESET hidden)
+ set(CMAKE_VISIBILITY_INLINES_HIDDEN 1)
+ 
