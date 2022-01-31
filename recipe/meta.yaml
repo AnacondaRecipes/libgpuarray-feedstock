@@ -21,6 +21,7 @@ requirements:
     - {{ compiler('c') }}
     - cmake
     - make  # [unix]
+    - patch  # [osx and arm64]
   host:
     - mako
 
